@@ -1,0 +1,19 @@
+/* pages/my/info/info.wxss */
+.item{
+  background-color: #ffffff;
+  display:flex;
+  flex-direction:row;
+  height: 50px;
+  align-items: center;
+  position: relative;
+  padding-left:5px;
+  padding-right:5px;
+  text-align:left;
+  text-decoration:none;
+  border: none;
+  border-radius: 0;
+}
+.item::after {
+  border: none;
+  border-radius: 0;
+}

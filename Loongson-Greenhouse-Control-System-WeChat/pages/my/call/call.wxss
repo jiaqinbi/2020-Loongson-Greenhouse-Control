@@ -1,0 +1,22 @@
+/* pages/my/call/call.wxss */
+
+.calltme {
+  width: 100%;
+  height: 100%;
+  /* position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+  margin-top: 150rpx;
+}
+.mainContent {
+  /* text-indent: 70rpx; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  line-height: 66rpx;
+}
+
+

@@ -1,0 +1,94 @@
+<!--pages/data/rules/ruleview/ruleview.wxml-->
+<view class="table">
+ <view class="tr bg-w">
+ <view class="th" >下限值</view>
+ <view class="th2">名称</view>
+ <view class="th">上限值</view>
+ </view>
+
+<view class="tr bg-w"> 
+  <view class="data_value">
+    <input type="text" placeholder="{{room_temperate_lower}}℃" value="{{room_temperate_lower}}℃" bindblur='room_temperate_lower_input'/>
+  </view>
+  <view class="td">
+      <td><image src="../../../image/air_temperate.png"></image></td>
+      <td class="data_title"><text>室内温度</text></td>
+  </view>
+  <view class="data_value">
+      <input type="text" placeholder="{{room_temperate_upper}}℃" value="{{room_temperate_upper}}℃" bindblur='room_temperate_upper_input'/>
+  </view>
+ </view>
+
+ <view class="tr bg-w"> 
+  <view class="data_value">
+    <input type="text" placeholder="{{room_humidity_lower}}%" value="{{room_humidity_lower}}%" bindblur='room_humidity_lower_input'/>
+  </view>
+  <view class="td">
+      <td><image src="../../../image/air_humidity.png"></image></td>
+      <td class="data_title"><text>室内湿度</text></td>
+  </view>
+  <view class="data_value">
+      <input type="text" placeholder="{{room_humidity_upper}}%" value="{{room_humidity_upper}}%" bindblur='room_humidity_upper_input'/>
+  </view>
+ </view>
+
+ <view class="tr bg-w"> 
+  <view class="data_value">
+    <input type="text" placeholder="{{room_lux_lower}}lux" value="{{room_lux_lower}}lux" bindblur='room_lux_lower_input'/>
+  </view>
+  <view class="td">
+      <td><image src="../../../image/air_lux.png"></image></td>
+      <td class="data_title"><text>室内光照</text></td>
+  </view>
+  <view class="data_value">
+      <input type="text" placeholder="{{room_lux_upper}}ppm" value="{{room_lux_upper}}lux" bindblur='room_lux_upper_input'/>
+  </view>
+ </view>
+
+ <view class="tr bg-w"> 
+  <view class="data_value">
+    <input type="text" placeholder="{{room_co2_lower}}ppm" value="{{room_co2_lower}}ppm" bindblur='room_co2_lower_input'/>
+  </view>
+  <view class="td">
+      <td><image src="../../../image/air_co2.png"></image></td>
+      <td class="data_title"><text>二氧化碳</text></td>
+  </view>
+  <view class="data_value">
+      <input type="text" placeholder="{{room_co2_upper}}ppm" value="{{room_co2_upper}}ppm" bindblur='room_co2_upper_input'/>
+  </view>
+ </view>
+
+  
+ <view class="tr bg-w">
+  <view class="data_value">
+      <!-- <text  decode="{{true}}"></text> -->
+      <input type="text" placeholder="{{soil_humidity_lower}}%" value="{{soil_humidity_lower}}%" bindblur='soil_humidity_lower_input'/>
+  </view>
+  <view class="td">
+      <td><image src="../../../image/air_humidity.png"></image></td>
+      <td class="data_title"><text>土壤湿度</text></td>
+  </view>
+  <view class="data_value">
+      <!-- <text  decode="{{true}}">{{soil_humidity_upper}}%</text> -->
+      <input type="text" placeholder="{{soil_humidity_upper}}%" value="{{soil_humidity_upper}}%" bindblur='soil_humidity_upper_input'/>
+  </view>
+ </view>
+
+ <view class="tr bg-w"> 
+  <view class="data_value">
+      <input type="text" placeholder="{{soil_temperate_lower}}%" value="{{soil_temperate_lower}}℃" bindblur='soil_temperate_lower_input'/>
+  </view>
+  <view class="td">
+      <td><image src="../../../image/soil_temperate.png"></image></td>
+      <td class="data_title"><text>土壤温度</text></td>
+  </view>
+  <view class="data_value">
+      <input type="text" placeholder="{{soil_temperate_upper}}%" value="{{soil_temperate_upper}}℃" bindblur='soil_temperate_upper_input'/>
+  </view>
+ </view>
+
+ <!-- 提交按钮 -->
+<button class="formbtn" bindtap='orderMeeting'>修改</button>
+
+</view>
+

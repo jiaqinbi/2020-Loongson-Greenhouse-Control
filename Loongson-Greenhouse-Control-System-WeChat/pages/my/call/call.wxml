@@ -1,0 +1,14 @@
+<!--pages/my/call/call.wxml-->
+
+
+<view class="calltme">
+  <view class="mainContent">
+    
+    <text decode="true">
+      姓     名：毕家钦
+      Q      Q：944359954
+      邮    箱：bijiaqin@163.com
+    </text>
+  </view>
+</view>
+

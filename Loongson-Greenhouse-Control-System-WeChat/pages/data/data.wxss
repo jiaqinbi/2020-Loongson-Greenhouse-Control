@@ -1,0 +1,141 @@
+.weui_cell{
+    position: relative;
+    display: flex;
+    padding: 25rpx;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    border-bottom: 2rpx solid #dadada;
+}
+
+.weui_cell_hd{
+  display: inline-block;
+  /* background-color: blue; */
+  width: 12%;
+  height:30px;
+  margin-right: 10rpx;
+}
+.weui_cell_hd image{
+  width: 100%;
+  height: 30px;
+  vertical-align: -5rpx;
+}
+
+.weui_cell_bd{
+  display: inline-block;
+}
+.weui_cell_bd_p{
+  /* background-color: #ff0000; */
+  font-size: 20px;
+  font-weight: 800;
+  color: #030303;
+}
+
+.table {
+  border: 0px solid white;
+ }
+ .tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 3rem;
+  align-items: center;
+ }
+ .td {
+  width:40%;
+  justify-content: center;
+  text-align: center;
+ }
+ .td image
+ {
+   width: 20%;
+   height:18px;
+ }
+ .data_title{
+   width: 40%;
+ }
+ .data_title text
+ {
+   color: #22cc22;
+   font-size: 20px;
+   font-weight: 600;
+ }
+ .data_value{
+   width: 20%;
+   justify-content: center;
+   text-align: center;
+ }
+ 
+ .data_value text
+ {
+   color: #22cc22;
+   font-size: 18px;
+   font-weight: 600;
+   font-family: monospace;
+   
+ }
+
+ .data_value1{
+  width: 20%;
+  justify-content: center;
+  text-align: center;
+ }
+ .data_value1 text
+ {
+   color: red;
+   font-size: 18px;
+   font-weight: 600;
+   font-family: monospace;
+   
+ }
+ .data_time{
+  color: #939393;
+  width:40%;
+  justify-content: center;
+  text-align: center;
+  font-family: monospace;
+  font-weight: 700;
+ }
+
+ .bg-w{
+  background-color: snow;
+ }
+
+ .th{
+  width: 40%;
+  justify-content: center;
+  background: darkcyan;
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  font-size: 20px;
+  font-weight: 700;
+  align-items: center;
+ }
+ .th2 {
+  width: 20%;
+  justify-content: center;
+  background: darkcyan;
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  font-size: 20px;
+  font-weight: 700;
+  align-items: center;
+ }
+
+ .rules{
+  position:fixed; 
+  bottom:0; 
+  width:100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+ }
+ 
+
+
+ 

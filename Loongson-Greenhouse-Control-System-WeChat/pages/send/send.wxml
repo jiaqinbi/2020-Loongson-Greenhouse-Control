@@ -1,0 +1,88 @@
+<!--pages/send/send.wxml-->
+<view class="">
+  <view class='select_box'>
+    <view class='select' catchtap='selectTap' wx:if="{{first_click == 0}}">
+      <text class='select_text' >请选择设备</text>
+      <image class='select_img {{show&&"select_img_rotate"}}' src='/image/gobottom.png'></image>  
+    </view>
+    <view wx:else class='select' catchtap='selectTap'>
+      <text class='select_text'>00{{index}}号温室大棚</text>
+      <image class='select_img {{show&&"select_img_rotate"}}' src='/image/gobottom.png'></image>   
+    </view>
+    <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+      <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{devices}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'wx:for-item="item" decode="true" bindtap="onclick" class='select_text'>
+        00{{index+1}}号温室大棚 {{data_id}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.online === true ? ' 在线' : '离线'}}
+      </text>
+    </view>
+  </view>
+</view>
+
+<view class="caozuo">
+  <view wx:if="{{first_click == 0}}" class="tips_img">
+    <text class="select_text_tips">温馨提示:请先点击下拉框选择设备^_^</text>
+    <image src="../../image/tips_choose_device.jpg" mode="widthFix"></image>
+  </view>
+  <view wx:else>
+    <!-- 如果设备在线，则直接进行操作，离线则先启动设备 -->
+    <view wx:if="{{isonline}}">
+      <view class="weui_cell_hd1" mode="widthFix">
+        <image src="../../image/device.png"></image>
+      </view>
+      <view class="weui_cell_bd_p1"><text>00{{index}}号温室大棚已在线 </text></view>
+
+      <view class="caozuo_info_list">
+        <view class="weui_cell">
+          <view class="weui_cell_hd"><image src="../../image/led.jpg">
+            </image>
+          </view>
+          <view class="weui_cell_bd">
+            <view class="weui_cell_bd_p">设备状态</view>
+          </view>
+            <view class="weui_cell_hd-arrow_caozuo">
+              <switch checked="{{deviceStatusSwitchChecked}}" disabled="true"/>
+            </view>
+          <view class="with_arrow"></view>
+        </view>
+      </view>
+
+      <view class="caozuo_info_list">
+        <view class="weui_cell">
+          <view class="weui_cell_hd"><image src="../../image/led.jpg">
+            </image>
+          </view>
+          <view class="weui_cell_bd">
+            <view class="weui_cell_bd_p"> 照明灯 </view>
+          </view>
+            <view class="weui_cell_hd-arrow_caozuo">
+              <switch checked="{{lightStatusSwitchChecked}}" bindchange="btn_light_status_fun"/>
+            </view>
+          <view class="with_arrow"></view>
+        </view>
+      </view>
+
+      <view class="caozuo_info_list">
+        <view class="weui_cell">
+          <view class="weui_cell_hd"><image src="../../image/led.jpg">
+            </image>
+          </view>
+          <view class="weui_cell_bd">
+            <view class="weui_cell_bd_p"> 水泵 </view>
+          </view>
+            <view class="weui_cell_hd-arrow_caozuo">
+              <switch checked="{{pumpStatusSwitchChecked}}" bindchange="btn_pump_status_fun"/>
+            </view>
+          <view class="with_arrow"></view>
+        </view>
+      </view>
+
+
+    </view>
+    <view wx:else>
+      <view class="caozuo_info_list">
+        <view class="weui_cell">
+          <text class="select_text_tips">温馨提示:请先手动启动设备^_^</text>
+        </view>
+    </view>
+  </view>
+</view>
+</view>

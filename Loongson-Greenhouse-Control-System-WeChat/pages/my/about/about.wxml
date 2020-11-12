@@ -1,0 +1,7 @@
+<view class="aboutme">
+  <view class="mainContent">
+    <text class="title">关于我们</text>
+    <text decode="true">\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小程序为《2020年嵌入式暨智能互联大赛》BD团队队长毕家钦开发，仅用于BD团队参赛作品《龙芯智能温室大棚感控系统》使用，在小程序内可以对大棚信息进行监测，并且可以对设备进行控制。
+    </text>
+  </view>
+</view>

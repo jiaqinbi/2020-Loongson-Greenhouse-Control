@@ -1,0 +1,31 @@
+<view class="personal_info">
+	<view class="photo_wrap">
+		<image src="{{userInfo.avatarUrl}}" class="photo"></image>
+	</view>
+	<view class="nickname">
+		{{userInfo.nickName}}
+	</view>
+</view>
+<view class="wode_item_wrap">
+	<navigator url="../my/info/info">
+		<view class="wode_item">
+			{{infoback}}
+			<span class="arrow_wrap"></span>
+		</view>
+	</navigator>
+	<navigator url="../my/call/call">
+		<view class="wode_item">
+			{{callme}}
+			<span class="arrow_wrap"></span>
+		</view>
+	</navigator>
+	<navigator url="../my/about/about">
+		<view class="wode_item">
+			{{aboutme}}
+			<span class="arrow_wrap"></span>
+		</view>
+	</navigator>
+</view>
+<view class="wode_out">
+	<navigator url="../../pages/login/login">退出</navigator>
+</view>

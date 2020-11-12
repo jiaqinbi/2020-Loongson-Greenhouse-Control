@@ -1,0 +1,120 @@
+
+<view class="info_list">
+      <view class="weui_cell">
+          <view class="weui_cell_hd"><image src="../../image/device.png"></image></view>
+          <view class="weui_cell_bd">
+              <view class="weui_cell_bd_p">00{{index}}号温室大棚数据信息</view>
+          </view>
+      </view>
+</view>
+
+<view class="table">
+ <view class="tr bg-w">
+ <view class="th" >名称</view>
+ <view class="th2">数值</view>
+ <view class="th">更新时间</view>
+ </view>
+
+ <view class="tr bg-w"> 
+ <view class="td">
+    <td><image src="../../image/air_temperate.png"></image></td>
+    <td class="data_title"><text>室内温度</text></td>
+ </view>
+ <view class="data_value" wx:if="{{air_temperate_check}}">
+    <text  decode="{{true}}">{{air_temperate}}℃</text>
+ </view>
+ <view class="data_value1" wx:else>
+   <text  decode="{{true}}">{{air_temperate}}℃</text>
+ </view>
+ <view class="data_time">
+    {{air_temperate_time}}
+ </view>
+ </view>
+
+ <view class="tr"> 
+ <view class="td">
+    <td><image src="../../image/air_humidity.png"></image></td>
+    <td class="data_title"><text>室内湿度</text></td>
+ </view>
+ <view class="data_value" wx:if="{{air_humidity_check}}">
+    <text  decode="{{true}}">{{air_humidity}}%</text>
+ </view>
+ <view class="data_value1" wx:else>
+   <text  decode="{{true}}">{{air_humidity}}%</text>
+ </view>
+ <view class="data_time">
+    {{air_humidity_time}}
+ </view>
+ </view>
+
+ <view class="tr bg-w"> 
+ <view class="td">
+    <td><image src="../../image/air_lux.png"></image></td>
+    <td class="data_title"><text>室内光照</text></td>
+ </view>
+ <view class="data_value" wx:if="{{air_lux_check}}">
+    <text  decode="{{true}}">{{air_lux}}lux</text>
+ </view>
+ <view class="data_value1" wx:else>
+    <text  decode="{{true}}">{{air_lux}}lux</text>
+ </view>
+ <view class="data_time">
+    {{air_lux_time}}
+ </view>
+ </view>
+
+ <view class="tr"> 
+ <view class="td">
+    <td><image src="../../image/air_co2.png"></image></td>
+    <td class="data_title"><text>二氧化碳</text></td>
+ </view>
+ <view class="data_value" wx:if="{{air_co2_check}}">
+    <text  decode="{{true}}">{{air_co2}}ppm</text>
+ </view>
+ <view class="data_value1" wx:else>
+    <text  decode="{{true}}">{{air_co2}}ppm</text>
+ </view>
+ <view class="data_time">
+    {{air_co2_time}}
+ </view>
+ </view>
+
+ <view class="tr bg-w"> 
+ <view class="td">
+    <td><image src="../../image/air_humidity.png"></image></td>
+    <td class="data_title"><text>土壤湿度</text></td>
+ </view>
+ <view class="data_value" wx:if="{{soil_humidity_check}}">
+    <text  decode="{{true}}">{{soil_humidity}}%</text>
+ </view>
+ <view class="data_value1" wx:else>
+    <text  decode="{{true}}">{{soil_humidity}}%</text>
+ </view>
+ <view class="data_time">
+    {{soil_humidity_time}}
+ </view>
+ </view>
+
+
+ <view class="tr"> 
+ <view class="td">
+    <td><image src="../../image/soil_temperate.png"></image></td>
+    <td class="data_title"><text>土壤温度</text></td>
+ </view>
+ <view class="data_value" wx:if="{{soil_temperate_check}}">
+    <text  decode="{{true}}">{{soil_temperate}}℃</text>
+ </view>
+ <view class="data_value1" wx:else>
+    <text  decode="{{true}}">{{soil_temperate}}℃</text>
+ </view>
+ <view class="data_time">
+    {{soil_temperate_time}}
+ </view>
+ </view>
+</view>
+
+<view class="rules">
+   <navigator url="rules/rules">
+      <button class="rules_view">查看|设置规则</button>
+   </navigator>
+</view>

@@ -1,0 +1,11 @@
+<!--pages/index/start.wxml-->
+<view>
+  <text class="title-text">
+    龙芯温室大棚智能感控系统
+  </text>
+</view>
+<view>
+      <image src="../../image/start.png" class='welcome-img'></image>
+      <button class='welcome-btn' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+</view>
+

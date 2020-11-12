@@ -1,0 +1,145 @@
+page{
+  background: #f3f7f7;
+ }
+ .select_box{
+  background: #fff;
+  width: 100%;
+  margin: 30rpx auto;
+  position: relative;
+ }
+ .select{
+  box-sizing: border-box;
+  width: 100%;
+  height: 70rpx;
+  border:1px solid #efefef;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+ }
+ .select_text{
+  font-size: 30rpx;
+  flex: 1;
+ }
+ .select_img{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  transition:transform 0.3s;
+ }
+ .select_img_rotate{
+  transform:rotate(180deg); 
+ }
+ .option_box{
+  position: absolute;
+  top: 70rpx;
+  width: 100%;
+  border:1px solid #efefef;
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  background: #fff;
+  transition: height 0.3s;
+ }
+ .option{
+  display: block;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #efefef;
+  padding: 10rpx;
+ }
+
+ .caozuo{
+  position:fixed; 
+  bottom:0; 
+ }
+
+ .weui_cell{
+  position: relative;
+  display: flex;
+  padding: 25rpx;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 2rpx solid #dadada;
+}
+
+.weui_cell_hd{
+  display: inline-block;
+  width: 40rpx;
+  margin-right: 0rpx;
+}
+.weui_cell_hd image{
+  width: 100%;
+  height: 46.8rpx;
+  vertical-align: -5rpx;
+}
+.weui_cell_hd1{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin-right: 0rpx;
+}
+.weui_cell_hd1 image{
+  width: 80%;
+  /* height: 46.8rpx; */
+
+}
+
+.tips_img image{
+  display: flex;
+  justify-content: center;
+  width: 110%;
+  align-content: center;
+}
+.weui_cell_bd{
+  width: 210.6rpx;
+  display: inline-block;
+}
+.weui_cell_bd_p{
+  font-size: 46.8rpx;
+  /* width: */
+  color:black;
+  font-family: monospace;
+  font-weight: 1000;
+}
+.weui_cell_bd_p1{
+  font-size: 22px;
+  width: 100%;
+  color:black;
+  font-family: monospace;
+  font-weight: 1000;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: green;
+}
+.weui_cell_hd-arrow image{
+  display: inline-block;
+  width: 100%;
+  height: 40rpx;
+  vertical-align: -5rpx;
+}
+
+.weui_cell_hd-arrow_caozuo {
+  display: inline-block;
+  /* width: 100%;
+  height: 40rpx; */
+  vertical-align: -5rpx;
+    /* align-items: center; */
+    margin-left: 320rpx;
+}
+.select_text{
+  font-size: 42.12rpx;
+  font-family: monospace;
+  font-weight: 1000;
+}
+.select_text_tips{
+  font-size: 42.12rpx;
+  font-family: monospace;
+  font-weight: 1000;
+  color: rgb(235, 132, 6);
+}
+

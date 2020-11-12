@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/send/send",
+    "pages/data/data",
+    "pages/my/info/info",
+    "pages/my/call/call",
+    "pages/my/about/about",
+    "pages/data/rules/rules",
+    "pages/logs/logs",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0b737a",
+    "navigationBarTitleText": "龙芯智能温室感控系统",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#fbf9fe"
+  },
+  "tabBar": {
+    "color": "#929292",
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#69C3AA",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/shouye1.png",
+        "selectedIconPath": "image/shouye.png"
+      },
+      {
+        "pagePath": "pages/send/send",
+        "text": "操作",
+        "iconPath": "image/caozuo1.png",
+        "selectedIconPath": "image/caozuo.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "image/wode1.png",
+        "selectedIconPath": "image/wode.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

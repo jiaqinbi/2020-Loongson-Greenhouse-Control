@@ -1,0 +1,68 @@
+.table {
+  border: 0px solid white;
+ }
+ .tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 3rem;
+  align-items: center;
+ }
+ .td {
+  width:40%;
+  justify-content: center;
+  text-align: center;
+ }
+ .td image
+ {
+   width: 20%;
+   height:18px;
+ }
+ .data_title{
+   width: 40%;
+ }
+ .data_title text
+ {
+   color: black;
+   font-size: 20px;
+   font-weight: 600;
+ }
+ .data_value{
+   width: 20%;
+   justify-content: center;
+   text-align: center;
+ }
+ .data_value text
+ {
+   color: black;
+   font-size: 18px;
+   font-weight: 600;
+   font-family: monospace;
+ }
+
+ .bg-w{
+  background-color: snow;
+ }
+
+ .th{
+  width: 40%;
+  justify-content: center;
+  background-color: darkcyan;
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  font-size: 20px;
+  font-weight: 700;
+  align-items: center;
+ }
+ .th2 {
+  width: 20%;
+  justify-content: center;
+  background: darkcyan;
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  font-size: 20px;
+  font-weight: 700;
+  align-items: center;
+ }

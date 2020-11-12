@@ -1,0 +1,41 @@
+/* pages/index/start.wxss */
+image {
+  margin-top: 70.2rpx;
+  /* height: 1198rpx; */
+  width: 100%;
+}
+
+.title-text {
+  display: flex;
+  color: green;
+  font-size: 58.5rpx;
+  font-weight: 1000;
+  text-align: center;
+  /* margin-left: 100px; */
+  font-family: monospace;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.welcome-img {
+  margin-top: 70.2rpx;
+  position: absolute;
+  z-index: 1;
+}
+
+.welcome-btn {
+  background-color: #27e4b5;
+  color: white;
+  font-size: 53.6rpx;
+  width: 330rpx;
+  height: 120rpx;
+  text-align: center;
+  line-height: 90rpx;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 120rpx;
+  left: 46.8rpx;
+  right:46.8rpx;
+  z-index: 2;
+}

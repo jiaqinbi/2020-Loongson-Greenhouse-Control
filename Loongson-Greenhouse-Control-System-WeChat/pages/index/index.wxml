@@ -1,0 +1,36 @@
+<view>
+  <swiper indicator-dots="{{indicatorDots}}" 
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="commen_title">
+  <text>设备列表</text>
+</view>
+
+<view>
+  <view  wx:for="{{devices}}" wx:key="id" wx:for-item="item" data-id="{{item.id}}"  wx:for-index="index">
+    <view class="device">
+      <view class="single_image_wrap">
+        <image src="../../image/device.png" class="device_image"></image>
+      </view>
+      <view class="device_info">
+        <navigator url="../data/data?id={{item.id}}&index={{index+1}}">
+          <view class="device_name">
+            <text>00{{index+1}}号温室大棚</text>
+          </view>
+        </navigator>
+      </view>
+      <view class="device_status">
+        <text>{{item.online === true ? ' 在线' : '离线'}}</text>
+      </view>
+    </view>
+  </view>
+
+</view>
+
