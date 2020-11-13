@@ -67,5 +67,4 @@ RT-Thread有完整版和Nano版，对于资源受限的微控制器（MCU）系�
 系统暂时无法远程启停，只能远程控制水泵、灯光等执行器的启停。
 
 ### 代码仓库链接
-[gitee链接](https://www.r)
-[github链接](https://github.com/RT-Thread/rtt)
+[github链接](https://github.com/jiaqinbi/2020-Loongson-Greenhouse-Control)
